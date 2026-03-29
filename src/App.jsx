@@ -1,11 +1,13 @@
 import './App.css'
+import NavBar from './Components/Header/NavBar'
 
 function App() {
 
   return (
     <>
+      <NavBar></NavBar>
       <h2 className='text-4xl text-red-500'>Hello</h2>
-      <button className="btn primary-bg text-white py-5">Sample Button</button>
+
     </>
   )
 }
