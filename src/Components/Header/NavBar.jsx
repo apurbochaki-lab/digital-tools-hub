@@ -1,6 +1,6 @@
 import cartIcon from '../../assets/products/shopping-cart.png'
 
-const NavBar = () => {
+const NavBar = ({ carts }) => {
     return (
         <section className='bg-base-100 shadow-sm'>
             <div className='container mx-auto'>
@@ -39,9 +39,10 @@ const NavBar = () => {
                         <div className='relative'>
                             <img className='w-5 h-auto' src={cartIcon} />
 
-                            <div className='absolute top-[-10px] right-[-11px] bg-red-400 w-5 h-5 rounded-full flex justify-center items-center'>
-                                <p className='text-white font-semibold'>0</p>
-                            </div>
+                            {carts.length > 0 &&
+                                <div className='absolute top-[-10px] right-[-11px] bg-red-400 w-5 h-5 rounded-full flex justify-center items-center'>
+                                    <p className='text-white font-semibold'>{carts.length}</p>
+                                </div>}
 
                         </div>
                         <button className=' font-semibold'>Login</button>

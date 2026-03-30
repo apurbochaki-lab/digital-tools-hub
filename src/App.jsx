@@ -16,21 +16,28 @@ const productsData = async () => {
 function App() {
   const productsPromise = productsData()
   const [activeTab, setActiveTab] = useState("product")
+  const [carts, setCarts] = useState([])
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar carts={carts}></NavBar>
       <Banner></Banner>
       <InfoStrip></InfoStrip>
-      <TabSection activeTab={activeTab} setActiveTab={setActiveTab}></TabSection>
+      <TabSection 
+      activeTab={activeTab} setActiveTab={setActiveTab}
+      carts={carts}
+      ></TabSection>
 
       {activeTab === "product" &&
         <Suspense fallback={"Loading..."}>
-          <Products productsPromise={productsPromise}></Products>
+          <Products 
+          productsPromise={productsPromise}
+          carts={carts} setCarts={setCarts}
+          ></Products>
         </Suspense>
       }
 
-      {activeTab === "cart" && <Carts></Carts>}
+      {activeTab === "cart" && <Carts carts={carts} setCarts={setCarts}></Carts>}
 
     </>
   )

@@ -1,4 +1,4 @@
-const TabSection = ({activeTab, setActiveTab}) => {
+const TabSection = ({activeTab, setActiveTab, carts}) => {
     
     return (
         <div className='mt-20 container mx-auto'>
@@ -18,7 +18,7 @@ const TabSection = ({activeTab, setActiveTab}) => {
                     type="radio"
                     name="my_tabs_1"
                     className={`tab rounded-full px-7 text-lg font-bold ${activeTab === 'cart' ? "primary-bg text-white" : "text-black"} `}
-                    aria-label="Cart ()"
+                    aria-label={`Cart (${carts.length})`}
                     onClick={() => setActiveTab("cart")} />
             </div>
         </div>
