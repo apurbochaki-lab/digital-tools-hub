@@ -17,7 +17,6 @@ const TabSection = () => {
                     aria-label="Products"
                     onClick={() => setActiveTab("product")}
                     defaultChecked />
-
                 <input
                     type="radio"
                     name="my_tabs_1"

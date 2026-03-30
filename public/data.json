@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "Starter Resume Kit",
+        "description": "Basic resume builder for beginners with simple templates.",
+        "price": 9,
+        "period": "One-Time",
+        "tag": "New",
+        "features": [
+            "10+ templates",
+            "Basic editing",
+            "Export to PDF"
+        ],
+        "icon": "📄"
+    },
+    {
+        "id": 2,
+        "name": "Pro Resume Builder",
+        "description": "Advanced resume builder with ATS-friendly templates.",
+        "price": 19,
+        "period": "Monthly",
+        "tag": "Popular",
+        "features": [
+            "100+ templates",
+            "ATS optimization",
+            "Cover letter builder"
+        ],
+        "icon": "🧑‍💼"
+    },
+    {
+        "id": 3,
+        "name": "Career Boost Pack",
+        "description": "Complete toolkit to boost your job applications.",
+        "price": 49,
+        "period": "One-Time",
+        "tag": "Best seller",
+        "features": [
+            "Resume + Cover Letter",
+            "LinkedIn optimization",
+            "Interview tips"
+        ],
+        "icon": "🚀"
+    },
+    {
+        "id": 4,
+        "name": "LinkedIn Optimizer",
+        "description": "Improve your LinkedIn profile visibility and reach.",
+        "price": 12,
+        "period": "Monthly",
+        "tag": "Popular",
+        "features": [
+            "Profile review",
+            "Keyword optimization",
+            "Headline generator"
+        ],
+        "icon": "🔗"
+    },
+    {
+        "id": 5,
+        "name": "Portfolio Builder",
+        "description": "Create stunning personal portfolios easily.",
+        "price": 29,
+        "period": "Yearly",
+        "tag": "New",
+        "features": [
+            "Custom domains",
+            "Drag & drop builder",
+            "SEO tools"
+        ],
+        "icon": "🌐"
+    },
+    {
+        "id": 6,
+        "name": "Interview Prep AI",
+        "description": "Practice interviews with AI-based feedback.",
+        "price": 15,
+        "period": "Monthly",
+        "tag": "Best seller",
+        "features": [
+            "Mock interviews",
+            "AI feedback",
+            "Common questions bank"
+        ],
+        "icon": "🤖"
+    },
+    {
+        "id": 7,
+        "name": "Freelancer Starter Pack",
+        "description": "Everything you need to start freelancing.",
+        "price": 39,
+        "period": "One-Time",
+        "tag": "Popular",
+        "features": [
+            "Proposal templates",
+            "Client scripts",
+            "Gig optimization"
+        ],
+        "icon": "💼"
+    },
+    {
+        "id": 8,
+        "name": "Ultimate Career Suite",
+        "description": "All-in-one solution for job seekers and professionals.",
+        "price": 99,
+        "period": "Yearly",
+        "tag": "Best seller",
+        "features": [
+            "All features included",
+            "Priority support",
+            "Unlimited exports"
+        ],
+        "icon": "🔥"
+    }
+]
