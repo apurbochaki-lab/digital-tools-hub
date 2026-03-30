@@ -9,7 +9,7 @@ const stepsPromise = stepsData();
 
 const Steps = () => {
     const steps = use(stepsPromise);
-    console.log(steps)
+    // console.log(steps)
     return (
         <section className="mt-3 md:mt-30 bg-[#F9FAFC]">
             <div className="container mx-auto space-y-8 mb-20 py-30">
@@ -22,7 +22,7 @@ const Steps = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {/* Card */}
                     {
-                        steps.map(step => <div className="border border-gray-500/40 shadow-md max-w-[380px] mx-auto h-auto p-5 rounded-xl">
+                        steps.map(step => <div key={step.id} className="border border-gray-500/40 shadow-md max-w-[380px] mx-auto h-auto p-5 rounded-xl">
                             <span className="flex justify-end">
                                 <p className="primary-bg w-10 h-10 rounded-full text-white font-bold flex justify-center items-center">{step.step}</p>
                             </span>
