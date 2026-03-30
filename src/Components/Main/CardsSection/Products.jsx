@@ -1,7 +1,13 @@
 import { use } from "react";
 import ProductCard from "./ProductCard";
 
-const Products = ({ productsPromise, carts, setCarts }) => {
+const productsData = async () => {
+  const res = await fetch("/data.json");
+  return res.json();
+}
+const productsPromise = productsData()
+
+const Products = ({ carts, setCarts }) => {
     const products = use(productsPromise)
     // console.log(products)
 
