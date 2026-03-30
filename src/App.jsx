@@ -6,6 +6,7 @@ import InfoStrip from './Components/Main/InfoStrip'
 import TabSection from './Components/Main/TabSection'
 import { useState } from "react";
 import Carts from './Components/Main/Carts/Carts'
+import Steps from './Components/Main/Steps'
 
 function App() {
   const [activeTab, setActiveTab] = useState("product")
@@ -27,6 +28,8 @@ function App() {
         ></Products>}
 
       {activeTab === "cart" && <Carts carts={carts} setCarts={setCarts}></Carts>}
+
+      <Steps></Steps>
 
     </>
   )
