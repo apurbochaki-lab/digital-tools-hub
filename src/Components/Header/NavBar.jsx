@@ -37,10 +37,10 @@ const NavBar = () => {
 
                     <div className="navbar-end gap-5">
                         <div className='relative'>
-                            <img className='w-5' src={cartIcon} />
+                            <img className='w-5 h-auto' src={cartIcon} />
 
                             <div className='absolute top-[-10px] right-[-11px] bg-red-400 w-5 h-5 rounded-full flex justify-center items-center'>
-                                <p className='text-white'>1</p>
+                                <p className='text-white font-semibold'>0</p>
                             </div>
 
                         </div>

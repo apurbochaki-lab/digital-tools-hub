@@ -1,8 +1,5 @@
-import { useState } from "react";
-
-const TabSection = () => {
-    const [activeTab, setActiveTab] = useState("product")
-
+const TabSection = ({activeTab, setActiveTab}) => {
+    
     return (
         <div className='mt-20 container mx-auto'>
             <div className=' text-center space-y-4'>
@@ -13,14 +10,14 @@ const TabSection = () => {
             <div className="mt-5 tabs tabs-box flex justify-center items-center gap-5 bg-transparent">
                 <input
                     type="radio" name="my_tabs_1"
-                    className={`tab rounded-full px-7 font-bold ${activeTab === 'product' ? "primary-bg text-white" : "text-black"} `}
+                    className={`tab rounded-full px-7 text-lg font-bold ${activeTab === 'product' ? "primary-bg text-white" : "text-black"} `}
                     aria-label="Products"
                     onClick={() => setActiveTab("product")}
                     defaultChecked />
                 <input
                     type="radio"
                     name="my_tabs_1"
-                    className={`tab rounded-full px-7 font-bold ${activeTab === 'cart' ? "primary-bg text-white" : "text-black"} `}
+                    className={`tab rounded-full px-7 text-lg font-bold ${activeTab === 'cart' ? "primary-bg text-white" : "text-black"} `}
                     aria-label="Cart ()"
                     onClick={() => setActiveTab("cart")} />
             </div>

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaCheck } from 'react-icons/fa';
 
 const ProductCard = ({ product }) => {
     // console.log(product)
     const { tag, icon, name, description, price, period, features } = product;
+    const [isBuy, setIsBuy] = useState(false)
+
+    const handleBuyNow = () => {
+        setIsBuy(true)
+    }
 
     return (
         <section>
@@ -24,7 +30,7 @@ const ProductCard = ({ product }) => {
                     <h2 className="text-2xl font-bold">{name}</h2>
                     <p className=' text-black/60'>{description}</p>
                     <div className='flex items-center'>
-                        <span className="text-2xl font-bold">${price}</span>
+                        <span className="text-3xl font-bold">${price}</span>
                         <p className='text-black/60'>/{period}</p>
                     </div>
 
@@ -38,7 +44,11 @@ const ProductCard = ({ product }) => {
 
                     </ul>
                     <div className="">
-                        <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white font-bold btn-block">Buy Now</button>
+                        <button
+                            onClick={() => handleBuyNow()}
+                            className={`btn py-7  rounded-full text-white text-lg font-bold btn-block 
+                                ${isBuy ? "bg-green-600" : "primary-bg"} `}
+                        >{isBuy ? <h2 className='flex items-center gap-3'><FaCheck /> Added to Cart!</h2> : "Buy Now"}</button>
                     </div>
                 </div>
             </div>
