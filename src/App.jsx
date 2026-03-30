@@ -8,6 +8,7 @@ import { useState } from "react";
 import Carts from './Components/Main/Carts/Carts'
 import Steps from './Components/Main/Steps'
 import Pricings from './Components/Main/Pricings/Pricings'
+import WorkflowStrip from './Components/Main/WorkflowStrip'
 
 function App() {
   const [activeTab, setActiveTab] = useState("product")
@@ -31,6 +32,7 @@ function App() {
       {activeTab === "cart" && <Carts carts={carts} setCarts={setCarts}></Carts>}
       <Steps></Steps>
       <Pricings></Pricings>
+      <WorkflowStrip></WorkflowStrip>
 
     </>
   )

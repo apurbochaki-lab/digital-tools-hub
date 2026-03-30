@@ -45,7 +45,7 @@ const PriceCard = ({ price }) => {
                     ${isPopular
                             ? "bg-white text-black"
                             : "primary-bg text-white"}`}>
-                    {buttonText}
+                    <span className={`${isPopular && "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"}`}>{buttonText}</span>
                 </button>
             </div>
         </div>

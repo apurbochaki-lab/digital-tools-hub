@@ -110,5 +110,19 @@
             "Unlimited exports"
         ],
         "icon": "🔥"
+    },
+    {
+        "id": 9,
+        "name": "Automation Toolkit",
+        "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+        "price": 79,
+        "period": "Monthly",
+        "tag": "Popular",
+        "features": [
+            "50+ automation's",
+            "API access",
+            "Custom workflows"
+        ],
+        "icon": "🎯"
     }
 ]
