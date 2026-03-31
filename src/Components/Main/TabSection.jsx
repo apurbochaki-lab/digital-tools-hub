@@ -2,9 +2,9 @@ const TabSection = ({activeTab, setActiveTab, carts}) => {
     
     return (
         <div className='mt-20 container mx-auto'>
-            <div className=' text-center space-y-4'>
+            <div className=' text-center space-y-4 m-2'>
                 <h2 className=' text-5xl font-extrabold'>Premium Digital Tools</h2>
-                <p className='p-3 md:p-0 max-w-[450px] mx-auto text-black/70 font-medium'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
+                <p className='max-w-[450px] mx-auto text-black/70 font-medium'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
             </div>
 
             <div className="mt-5 tabs tabs-box flex justify-center items-center gap-5 bg-transparent">

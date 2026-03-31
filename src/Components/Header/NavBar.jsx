@@ -1,4 +1,4 @@
-import cartIcon from '../../assets/products/shopping-cart.png'
+// import cartIcon from '../../assets/products/shopping-cart.png'
 
 const NavBar = ({ carts }) => {
     return (
@@ -34,16 +34,17 @@ const NavBar = ({ carts }) => {
 
                         </ul>
                     </div>
-
+                    {/* Right Content */}
                     <div className="navbar-end gap-5">
                         <div className='relative'>
-                            <img className='w-5 h-auto' src={cartIcon} />
+                            {/* <img className='w-5 h-auto' src={cartIcon} /> */}
+                            <h2 className='text-2xl'>🛒</h2>
 
                             {carts.length > 0 &&
-                                <div className='absolute top-[-10px] right-[-11px] bg-red-400 w-5 h-5 rounded-full flex justify-center items-center'>
+                                <div className='absolute -top-[5px] -right-[7px] bg-red-400 w-5 h-5 rounded-full flex justify-center items-center'>
                                     <p className='text-white font-semibold'>{carts.length}</p>
-                                </div>}
-
+                                </div>
+                            }
                         </div>
                         <button className=' font-semibold'>Login</button>
                         <a className="btn primary-bg text-white rounded-full font-bold">Get Started</a>

@@ -21,7 +21,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
 
     return (
         <section>
-            <div key={product.id} className="card m-3 rounded-xl bg-base-100 shadow-md border border-gray-500/30 h-full">
+            <div key={product.id} className="card rounded-xl bg-base-100 shadow-md border border-gray-500/30 h-full">
                 <div className="p-4 space-y-3">
                     <div className="flex justify-end">
                         {/* Nested Ternary Operator */}

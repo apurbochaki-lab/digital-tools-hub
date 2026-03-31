@@ -8,7 +8,7 @@ const Banner = () => {
             <div className="hero-content flex-col gap-10 lg:flex-row-reverse">
                 <img
                     src={bannerImg}
-                    className="max-w-sm rounded-lg shadow-2xl"
+                    className="rounded-lg shadow-2xl"
                 />
                 <div className='max-w-[640px] space-y-4'>
 
@@ -17,8 +17,8 @@ const Banner = () => {
                         <p className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-semibold'>New: AI-Powered Tools Available</p>
                     </span>
 
-                    <h1 className="text-6xl font-extrabold leading-18">Supercharge Your Digital Workflow</h1>
-                    <p className="leading-7 max-w-[500px]">
+                    <h1 className="text-[55px] font-extrabold">Supercharge Your Digital Workflow</h1>
+                    <p className="leading-7 ">
                         Access premium AI tools, design assets, templates, and productivity
                         software—all in one place. Start creating faster today.
                         Explore Products

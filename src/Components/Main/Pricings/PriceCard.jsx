@@ -3,22 +3,24 @@ import checkMark from '../../../assets/Check.png'
 
 const PriceCard = ({ price }) => {
     console.log(price)
-    const { name, tagline, price:cardPrice, duration, features, buttonText, isPopular } = price;
+    const { name, tagline, price: cardPrice, duration, features, buttonText, isPopular } = price;
 
     return (
         // card
-        <div className='mt-8 w-[380px] mx-auto relative flex flex-col'>
-            <div className={`flex-1 rounded-xl border border-gray-200 shadow-md p-5 space-y-5  ${isPopular ? "primary-bg text-white" : "bg-[#F2F2F2]"} `}>
+        <div className={`rounded-xl border border-gray-200 shadow-md p-8 ${isPopular ? "primary-bg text-white" : "bg-[#F2F2F2]/65"} `}>
 
-                {/* conditional badge */}
-                {isPopular &&
-                    <span className=' flex justify-end absolute -top-3 right-[40%]'>
-                        <p className='badge badge-lg bg-[#FEF3C6] text-[#BB4D00] font-bold'>Popular</p>
-                    </span>
-                }
+            {/* conditional badge */}
+            {/* -right-[40%] -top-[12%] */}
+            {isPopular &&
+                <div className='relative'> 
+                    <p className='badge badge-lg bg-[#FEF3C6] text-[#BB4D00] font-bold absolute -top-10 right-[40%]'>Popular</p>
+                </div>
+            }
 
+            {/* Card Body */}
+            <div className='space-y-5'>
                 {/* 1st part */}
-                <div>
+                <div className=''>
                     <h2 className=' text-2xl font-bold'>{name} </h2>
                     <p className={`font-medium ${isPopular ? "text-white/80" : "text-gray-500/80"} `}>{tagline} </p>
                 </div>
@@ -49,6 +51,7 @@ const PriceCard = ({ price }) => {
                 </button>
             </div>
         </div>
+
     );
 };
 
