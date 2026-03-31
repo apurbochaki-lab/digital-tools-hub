@@ -1,4 +1,4 @@
-# 🎯 A-6 Digital Tools Buying Website
+# 🎯 Digital Tools Buying Website
 
 A modern and responsive digital tools marketplace built using React. This project allows users to explore various digital products, add them to a cart, and simulate a simple checkout experience with interactive UI feedback.
 
@@ -6,7 +6,7 @@ A modern and responsive digital tools marketplace built using React. This projec
 
 ## 📌 **Project Overview**
 
-The **A-6 Digital Tools Buying Website** is designed to provide a clean and user-friendly interface where users can browse digital tools, view product details, and manage their cart efficiently.
+The **Digital Tools Buying Website** is designed to provide a clean and user-friendly interface where users can browse digital tools, view product details, and manage their cart efficiently.
 
 The UI follows a structured layout inspired by Figma design, ensuring consistency, usability, and responsiveness across all devices.
 
