@@ -9,9 +9,9 @@ const ProductCard = ({ product, carts, setCarts }) => {
 
     const handleBuyNow = () => {
         setIsBuy(true)
-        
+
         const isExist = carts.find(item => item.id === product.id)
-        if(isExist) {
+        if (isExist) {
             toast.error("It's already in cart")
         } else {
             setCarts([...carts, product])
@@ -40,7 +40,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
                     <p className=' text-black/60'>{description}</p>
                     <div className='flex items-center'>
                         <span className="text-3xl font-bold">${price}</span>
-                        <p className='text-black/60'>/{period}</p>
+                        <p className='pt-3 text-black/60'>/{period}</p>
                     </div>
 
                     <ul className=" flex flex-col gap-2 text-xs">

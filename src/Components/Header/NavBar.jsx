@@ -2,7 +2,7 @@ import cartIcon from '../../assets/products/shopping-cart.png'
 
 const NavBar = ({ carts }) => {
     return (
-        <section className='bg-base-100 shadow-sm'>
+        <section className='bg-base-100 shadow-md sticky top-0 z-50'>
             <div className='container mx-auto'>
 
                 <div className="navbar">

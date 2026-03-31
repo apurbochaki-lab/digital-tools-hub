@@ -14,7 +14,9 @@ const Carts = ({ carts, setCarts }) => {
         <section className="">
             {
                 carts.length === 0
-                    ? <h2 className="text-4xl font-bold text-center py-15 text-black/60">No Items Here</h2>
+                    ? <div className="mt-10 border-2 border-zinc-400/30 rounded-2xl shadow-md max-w-200 mx-auto">
+                        <h2 className="text-4xl font-bold text-center py-15 text-black/60">No Items Here</h2>
+                    </div>
 
                     : <div className="mt-5 mb-20 border border-gray-500/40 shadow-sm rounded-xl container mx-auto">
                         <div className="p-6 space-y-5">
@@ -42,7 +44,7 @@ const Carts = ({ carts, setCarts }) => {
                                 <h2 className="text-3xl font-extrabold">${totalPrice}</h2>
                             </div>
 
-                            <button onClick={() => {setCarts([]); toast.success("Proceed to Checkout.")}} className="btn primary-bg w-full rounded-full text-white text-xl font-bold py-8">Proceed To Checkout</button>
+                            <button onClick={() => { setCarts([]); toast.success("Proceed to Checkout.") }} className="btn primary-bg w-full rounded-full text-white text-xl font-bold py-8">Proceed To Checkout</button>
                         </div>
                     </div>
             }

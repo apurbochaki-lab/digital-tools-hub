@@ -9,6 +9,7 @@ import Carts from './Components/Main/Carts/Carts'
 import Steps from './Components/Main/Steps'
 import Pricings from './Components/Main/Pricings/Pricings'
 import WorkflowStrip from './Components/Main/WorkflowStrip'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   const [activeTab, setActiveTab] = useState("product")
@@ -27,12 +28,14 @@ function App() {
       {activeTab === "product" &&
         <Products
           carts={carts} setCarts={setCarts}
-        ></Products>}
+        ></Products>
+      }
 
       {activeTab === "cart" && <Carts carts={carts} setCarts={setCarts}></Carts>}
       <Steps></Steps>
       <Pricings></Pricings>
       <WorkflowStrip></WorkflowStrip>
+      <Footer></Footer>
 
     </>
   )

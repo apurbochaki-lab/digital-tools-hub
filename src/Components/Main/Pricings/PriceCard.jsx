@@ -3,7 +3,7 @@ import checkMark from '../../../assets/Check.png'
 
 const PriceCard = ({ price }) => {
     console.log(price)
-    const { name, tagline, price: cardPrice, duration, features, buttonText, isPopular } = price;
+    const { name, tagline, price:cardPrice, duration, features, buttonText, isPopular } = price;
 
     return (
         // card
